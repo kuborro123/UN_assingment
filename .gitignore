@@ -1,2 +1,3 @@
 venv/
 dataverse_files/
+.env
