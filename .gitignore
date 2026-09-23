@@ -2,3 +2,4 @@ venv/
 dataverse_files/
 .env
 .DS_Store
+merged_data.csv
