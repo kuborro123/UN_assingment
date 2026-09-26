@@ -1,0 +1,29 @@
+region,transition,n_rows,n_countries
+East Asia & Pacific,continued_peace,824,28
+East Asia & Pacific,onset,10,7
+East Asia & Pacific,cessation,10,7
+East Asia & Pacific,continued_conflict,114,6
+Europe & Central Asia,continued_peace,1562,51
+Europe & Central Asia,onset,26,11
+Europe & Central Asia,cessation,28,13
+Europe & Central Asia,continued_conflict,101,11
+Latin America & Caribbean,continued_peace,1075,32
+Latin America & Caribbean,onset,8,5
+Latin America & Caribbean,cessation,12,9
+Latin America & Caribbean,continued_conflict,54,5
+"Middle East, North Africa, Afghanistan & Pakistan",continued_peace,470,20
+"Middle East, North Africa, Afghanistan & Pakistan",onset,25,13
+"Middle East, North Africa, Afghanistan & Pakistan",cessation,25,13
+"Middle East, North Africa, Afghanistan & Pakistan",continued_conflict,224,14
+North America,continued_peace,48,2
+North America,onset,3,1
+North America,cessation,2,1
+North America,continued_conflict,17,1
+South Asia,continued_peace,134,5
+South Asia,onset,5,3
+South Asia,cessation,7,3
+South Asia,continued_conflict,63,4
+Sub-Saharan Africa,continued_peace,1111,47
+Sub-Saharan Africa,onset,82,32
+Sub-Saharan Africa,cessation,75,27
+Sub-Saharan Africa,continued_conflict,330,28

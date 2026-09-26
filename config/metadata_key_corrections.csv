@@ -1,0 +1,10 @@
+metadata_iso,session,year,file_iso,rationale
+EC,66,2011,EU,Metadata uses European Council code while filename uses EU
+EC,68,2013,EU,Metadata uses European Council code while filename uses EU
+POR,71,2016,PRT,Metadata typo for Portugal
+POR,72,2017,PRT,Metadata typo for Portugal
+POR,75,2020,PRT,Metadata typo for Portugal
+PKR,72,2017,PRK,Metadata typo for North Korea
+ZFA,71,2016,ZAF,Metadata typo for South Africa
+CHE,56,2001,SWE,Metadata ISO keys for Sweden and Swaziland are shifted
+SWE,56,2001,SWZ,Metadata ISO keys for Sweden and Swaziland are shifted

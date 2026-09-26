@@ -1,0 +1,5 @@
+population_step,n_rows,n_countries
+input rows,6712,202
+"main population, 1990-2024",6445,193
+main 1990-2024 with observed t and t+1 status,6445,193
+identical observed-SIPRI rows,5071,165

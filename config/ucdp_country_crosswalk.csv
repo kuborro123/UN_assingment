@@ -1,0 +1,127 @@
+source_name,entity_id,country_name,valid_from,valid_to,mapping_rationale,exclusion_status
+Afghanistan,AFG,Afghanistan,1978,2025,exact normalized pycountry name,included
+Albania,ALB,Albania,1946,1946,exact normalized pycountry name,included
+Algeria,DZA,Algeria,1954,2020,exact normalized pycountry name,included
+Angola,AGO,Angola,1961,2025,exact normalized pycountry name,included
+Argentina,ARG,Argentina,1955,1982,exact normalized pycountry name,included
+Australia,AUS,Australia,2003,2003,exact normalized pycountry name,included
+Azerbaijan,AZE,Azerbaijan,1991,2023,exact normalized pycountry name,included
+Bangladesh,BGD,Bangladesh,1975,2017,exact normalized pycountry name,included
+Benin,BEN,Benin,2022,2025,exact normalized pycountry name,included
+Bolivia,BOL,Bolivia,1946,1967,exact normalized pycountry name,included
+Bosnia-Herzegovina,BIH,Bosnia and Herzegovina,1992,1995,reviewed explicit alias,included
+Brunei,BRN,Brunei,1962,1962,reviewed explicit alias,included
+Burkina Faso,BFA,Burkina Faso,1985,2025,exact normalized pycountry name,included
+Burundi,BDI,Burundi,1965,2024,exact normalized pycountry name,included
+Cambodia (Kampuchea),KHM,Cambodia,1946,2025,reviewed explicit alias,included
+Cameroon,CMR,Cameroon,1957,2025,exact normalized pycountry name,included
+Central African Republic,CAF,Central African Republic,2001,2025,exact normalized pycountry name,included
+Chad,TCD,Chad,1966,2023,exact normalized pycountry name,included
+Chile,CHL,Chile,1973,1973,exact normalized pycountry name,included
+China,CHN,China,1946,2020,exact normalized pycountry name,included
+Colombia,COL,Colombia,1964,2025,exact normalized pycountry name,included
+Comoros,COM,Comoros,1989,1997,exact normalized pycountry name,included
+Congo,COG,"Congo, Republic of the",1993,2016,reviewed explicit alias,included
+Costa Rica,CRI,Costa Rica,1948,1948,exact normalized pycountry name,included
+Croatia,HRV,Croatia,1992,1995,exact normalized pycountry name,included
+Cuba,CUB,Cuba,1953,1961,exact normalized pycountry name,included
+Cyprus,CYP,Cyprus,1955,1974,exact normalized pycountry name,included
+DR Congo (Zaire),COD,"Congo, Democratic Republic of the",1960,2025,reviewed explicit alias,included
+Djibouti,DJI,Djibouti,1991,2008,exact normalized pycountry name,included
+Dominican Republic,DOM,Dominican Republic,1965,1965,exact normalized pycountry name,included
+Ecuador,ECU,Ecuador,1995,1995,exact normalized pycountry name,included
+Egypt,EGY,Egypt,1948,2022,exact normalized pycountry name,included
+El Salvador,SLV,El Salvador,1969,1991,exact normalized pycountry name,included
+Eritrea,ERI,Eritrea,1997,2016,exact normalized pycountry name,included
+Ethiopia,ETH,Ethiopia,1960,2025,exact normalized pycountry name,included
+France,FRA,France,1946,1962,exact normalized pycountry name,included
+Gabon,GAB,Gabon,1964,1964,exact normalized pycountry name,included
+Gambia,GMB,Gambia,1981,1981,reviewed explicit alias,included
+Georgia,GEO,Georgia,1991,2008,exact normalized pycountry name,included
+Ghana,GHA,Ghana,1966,1983,exact normalized pycountry name,included
+Greece,GRC,Greece,1946,1949,exact normalized pycountry name,included
+Grenada,GRD,Grenada,1983,1983,exact normalized pycountry name,included
+Guatemala,GTM,Guatemala,1949,1995,exact normalized pycountry name,included
+Guinea,GIN,Guinea,2000,2001,exact normalized pycountry name,included
+Guinea-Bissau,GNB,Guinea-Bissau,1963,1999,exact normalized pycountry name,included
+Haiti,HTI,Haiti,1989,2025,exact normalized pycountry name,included
+Honduras,HND,Honduras,1957,1969,exact normalized pycountry name,included
+Hungary,HUN,Hungary,1956,1956,exact normalized pycountry name,included
+Hyderabad,,,1947,1948,historical entity,excluded
+India,IND,India,1948,2025,exact normalized pycountry name,included
+Indonesia,IDN,Indonesia,1946,2025,exact normalized pycountry name,included
+Iran,IRN,Iran,1946,2025,exact normalized pycountry name,included
+Iraq,IRQ,Iraq,1948,2025,exact normalized pycountry name,included
+Israel,ISR,Israel,1946,2025,exact normalized pycountry name,included
+Ivory Coast,CIV,Côte d'Ivoire,2002,2011,reviewed explicit alias,included
+Jordan,JOR,Jordan,1948,2016,exact normalized pycountry name,included
+Kenya,KEN,Kenya,1952,2025,exact normalized pycountry name,included
+Kuwait,KWT,Kuwait,1990,1991,exact normalized pycountry name,included
+Kyrgyzstan,KGZ,Kyrgyzstan,2021,2022,reviewed explicit alias,included
+Laos,LAO,Laos,1946,1990,exact normalized pycountry name,included
+Lebanon,LBN,Lebanon,1948,2017,exact normalized pycountry name,included
+Lesotho,LSO,Lesotho,1998,1998,exact normalized pycountry name,included
+Liberia,LBR,Liberia,1980,2003,exact normalized pycountry name,included
+Libya,LBY,Libya,1987,2020,exact normalized pycountry name,included
+Madagascar (Malagasy),MDG,Madagascar,1947,1971,reviewed explicit alias,included
+Malaysia,MYS,Malaysia,1948,2013,exact normalized pycountry name,included
+Mali,MLI,Mali,1985,2025,exact normalized pycountry name,included
+Mauritania,MRT,Mauritania,1957,2010,exact normalized pycountry name,included
+Mexico,MEX,Mexico,1994,1996,exact normalized pycountry name,included
+Moldova,MDA,Moldova,1992,1992,exact normalized pycountry name,included
+Morocco,MAR,Morocco,1953,1989,exact normalized pycountry name,included
+Mozambique,MOZ,Mozambique,1964,2025,exact normalized pycountry name,included
+Myanmar (Burma),MMR,Myanmar,1948,2025,reviewed explicit alias,included
+Nepal,NPL,Nepal,1960,2006,exact normalized pycountry name,included
+Netherlands,NLD,Netherlands,1962,1962,exact normalized pycountry name,included
+Nicaragua,NIC,Nicaragua,1957,1990,exact normalized pycountry name,included
+Niger,NER,Niger,1991,2025,exact normalized pycountry name,included
+Nigeria,NGA,Nigeria,1966,2025,exact normalized pycountry name,included
+North Korea,PRK,"Korea, North",1949,1953,exact normalized pycountry name,included
+North Macedonia,MKD,North Macedonia,2001,2001,exact normalized pycountry name,included
+Oman,OMN,Oman,1957,1975,exact normalized pycountry name,included
+Pakistan,PAK,Pakistan,1948,2025,exact normalized pycountry name,included
+Panama,PAN,Panama,1989,1989,exact normalized pycountry name,included
+Papua New Guinea,PNG,Papua New Guinea,1990,1996,exact normalized pycountry name,included
+Paraguay,PRY,Paraguay,1947,1989,exact normalized pycountry name,included
+Peru,PER,Peru,1965,2010,exact normalized pycountry name,included
+Philippines,PHL,Philippines,1946,2025,exact normalized pycountry name,included
+Romania,ROU,Romania,1989,1989,exact normalized pycountry name,included
+Russia (Soviet Union),RUS,Russia,1993,2025,post-1991 rows refer to Russia,included
+Russia (Soviet Union),,,1946,1991,Soviet Union period,excluded
+Rwanda,RWA,Rwanda,1990,2025,exact normalized pycountry name,included
+Saudi Arabia,SAU,Saudi Arabia,1979,1979,exact normalized pycountry name,included
+Senegal,SEN,Senegal,1990,2011,exact normalized pycountry name,included
+Serbia (Yugoslavia),,,1991,1999,Yugoslavia/Serbia-Montenegro period,excluded
+Sierra Leone,SLE,Sierra Leone,1991,2001,exact normalized pycountry name,included
+Somalia,SOM,Somalia,1964,2025,exact normalized pycountry name,included
+South Africa,ZAF,South Africa,1966,1989,exact normalized pycountry name,included
+South Korea,KOR,"Korea, South",1949,1953,reviewed explicit alias,included
+South Sudan,SSD,South Sudan,2011,2025,exact normalized pycountry name,included
+South Vietnam,,,1955,1975,historical South Vietnam,excluded
+South Yemen,,,1964,1986,historical South Yemen,excluded
+Spain,ESP,Spain,1978,1991,exact normalized pycountry name,included
+Sri Lanka,LKA,Sri Lanka,1971,2009,exact normalized pycountry name,included
+Sudan,SDN,Sudan,1963,2025,exact normalized pycountry name,included
+Suriname,SUR,Suriname,1987,1987,exact normalized pycountry name,included
+Syria,SYR,Syria,1948,2025,exact normalized pycountry name,included
+Taiwan,TWN,"Taiwan, Province of China",1949,1958,exact normalized pycountry name,included
+Tajikistan,TJK,Tajikistan,1992,2022,exact normalized pycountry name,included
+Tanzania,TZA,Tanzania,1978,2020,exact normalized pycountry name,included
+Thailand,THA,Thailand,1946,2025,exact normalized pycountry name,included
+Togo,TGO,Togo,1986,2025,exact normalized pycountry name,included
+Trinidad and Tobago,TTO,Trinidad and Tobago,1990,1990,exact normalized pycountry name,included
+Tunisia,TUN,Tunisia,1953,2016,exact normalized pycountry name,included
+Turkey,TUR,Türkiye,1974,2025,reviewed explicit alias,included
+Uganda,UGA,Uganda,1971,2022,exact normalized pycountry name,included
+Ukraine,UKR,Ukraine,2014,2025,exact normalized pycountry name,included
+United Kingdom,GBR,United Kingdom,1946,2025,exact normalized pycountry name,included
+United States of America,USA,United States,1950,2025,exact normalized pycountry name,included
+Uruguay,URY,Uruguay,1972,1972,exact normalized pycountry name,included
+Uzbekistan,UZB,Uzbekistan,1999,2004,exact normalized pycountry name,included
+Venezuela,VEN,Venezuela,1962,1992,exact normalized pycountry name,included
+Vietnam (North Vietnam),VNM,Vietnam,1976,1988,post-unification Vietnam,included
+Vietnam (North Vietnam),,,1946,1975,historical North Vietnam,excluded
+Yemen (North Yemen),YEM,Yemen,1994,2025,post-unification Yemen,included
+Yemen (North Yemen),,,1948,1982,historical North Yemen,excluded
+Zimbabwe (Rhodesia),,,1967,1979,historical Rhodesia,excluded
