@@ -1,0 +1,6 @@
+# Only needed to generate scores; not needed to use the completed cache.
+transformers==4.48.3
+tokenizers==0.21.0
+torch==2.5.1
+huggingface-hub==0.36.2
+safetensors==0.7.0

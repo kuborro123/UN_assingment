@@ -1,0 +1,9 @@
+sample,transition,transition_label,n_rows,n_countries,sample_rows,row_share
+all_target_observed,continued_peace,Continued peace (0→0),5224,185,6445,0.8105508145849496
+all_target_observed,onset,Conflict onset (0→1),159,72,6445,0.024670287044220324
+all_target_observed,cessation,Conflict cessation (1→0),159,73,6445,0.024670287044220324
+all_target_observed,continued_conflict,Continued conflict (1→1),903,69,6445,0.1401086113266098
+sipri_complete_identical,continued_peace,Continued peace (0→0),3979,155,5071,0.7846578584105699
+sipri_complete_identical,onset,Conflict onset (0→1),140,68,5071,0.027607966870439756
+sipri_complete_identical,cessation,Conflict cessation (1→0),136,60,5071,0.02681916781699862
+sipri_complete_identical,continued_conflict,Continued conflict (1→1),816,64,5071,0.16091500690199173

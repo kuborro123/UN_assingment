@@ -1,0 +1,10 @@
+source,source_label,valid_from,valid_to,entity_id,country_name,entity_type,include_main,mapping_method,mapping_rationale
+speech_filename,CSK,1990,1992,CSK,Czechoslovakia,historical_state,False,explicit_time_rule,No defensible one-to-one mapping to Czechia or Slovakia
+speech_filename,DDR,1990,1990,DDR,German Democratic Republic,historical_transition,False,explicit_time_rule,Separate 1990 unification statement; a DEU speech also exists
+speech_filename,YUG,1990,2005,YUG,Yugoslavia / Serbia and Montenegro,historical_state,False,explicit_time_rule,No defensible one-to-one mapping to a single successor state
+speech_filename,RUS,1990,1991,SUN,Soviet Union,historical_state,False,explicit_time_rule,Speech represents the Soviet Union rather than modern Russia
+speech_filename,BLR,1990,1990,BYSSR,Byelorussian Soviet Socialist Republic,historical_state,False,explicit_time_rule,Pre-independence Soviet republic
+speech_filename,UKR,1990,1990,UASSR,Ukrainian Soviet Socialist Republic,historical_state,False,explicit_time_rule,Pre-independence Soviet republic
+speech_filename,EU,2011,2025,EU,European Union,non_state_aggregate,False,explicit_entity_rule,Not a country-level UCDP/SIPRI observation
+speech_filename,PSE,1990,2025,PSE,Palestine,observer_state,False,explicit_entity_rule,Retained for descriptive sensitivity only
+speech_filename,VAT,1990,2025,VAT,Holy See,observer_state,False,explicit_entity_rule,Retained for text analysis; no comparable SIPRI coverage

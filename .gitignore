@@ -1,5 +1,12 @@
 venv/
+.venv/
 dataverse_files/
 .env
 .DS_Store
 merged_data.csv
+__pycache__/
+.ipynb_checkpoints/
+/outputs/
+/TXT/
+/*.xlsx
+/*.csv

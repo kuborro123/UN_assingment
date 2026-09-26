@@ -1,85 +1,102 @@
-# United Nations General Debate Corpus
+# UN speeches and conflict transitions
 
-This project analyzes United Nations General Debate speeches from 1946 to 2025.
-The notebook combines speech text and speaker metadata with UCDP/PRIO conflict
-data and SIPRI military expenditure data. The exploratory analysis focuses on
-1990–2025 and compares trust/cooperation rhetoric, military-threat rhetoric, and
-military spending with conflict status in the following year.
+A university data-science project combining UN General Debate speeches,
+UCDP/PRIO conflict data and SIPRI military spending (SDG 16).
+
+**Completed:** data preparation, full-speech theme scoring and transition-aware
+exploratory analysis. **Next:** independent passage review and predictive analysis.
+The earlier team notebook is preserved in Git at commit `f44ce6f3`.
+
+## Read the results
+
+Open [main.ipynb](main.ipynb) for the workflow and [EDA_RESULTS.md](EDA_RESULTS.md)
+for findings and limitations. Small reproduced tables and figures are in
+[results/](results/). [RESEARCH_DESIGN.md](RESEARCH_DESIGN.md) describes the planned
+predictive comparison. No predictive results or final paper conclusions exist yet.
 
 ## Setup
 
-Create a local `.env` file in the project root. Use absolute paths so that the
-notebook works regardless of the current working directory. It must contain all
-four paths used by `main.ipynb`:
+Use Python 3.11. From the project folder:
 
-```env
-data_path=/absolute/path/to/code/dataverse_files
-speech_path=/absolute/path/to/code/dataverse_files/Speakers_by_session.xlsx
-conflicts_path=/absolute/path/to/code/dataverse_files/conflicts.csv
-sipri_path=/absolute/path/to/SIPRI-Milex-data-1949-2025_v1.2.xlsx
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
 ```
 
-Replace `/absolute/path/to/code` with the location of this project on your
-computer and update the SIPRI path to the location of your downloaded workbook.
-Do not commit `.env`, since paths are different for every person and may contain
-private information.
+Edit `.env` to point to your local speech directory, speaker metadata, UCDP CSV
+and SIPRI workbook. Leave `output_path=outputs`. Source versions are recorded in
+[data-manifest.md](data-manifest.md). Country mappings are in [config/](config/).
+Do not commit raw data or your machine-specific `.env`.
 
-The notebook loads these environment variables into `DATA_PATH`, `SPEECH_PATH`,
-`CONFLICTS_PATH`, and `SIPRI_PATH` at startup.
+Obtain the completed **rhetoric_full.sqlite** from the teammate who ran scoring
+and place it in `outputs/` (create that folder if needed). This file contains all
+6,712 speech scores and their passage scores. The CSV export alone is insufficient
+for passage review. Do not use the older prefix-score cache.
 
-## Data layout
+SHA-256 of the completed SQLite cache:
+`4ab510d408644858d14c88338ce26d6cc7f669e0485452a047912ef7491c32d6`.
 
-```text
-dataverse_files/
-├── Speakers_by_session.xlsx
-├── conflicts.csv
-└── TXT/
-	├── Session 01 - 1946/
-	├── Session 02 - 1947/
-	└── ...
+## Reproduce in two commands
+
+```bash
+python scripts/prepare_analysis.py
+python scripts/review_and_eda.py
 ```
 
-The SIPRI workbook is separate from the UN corpus directory and should contain
-the `Share of GDP` sheet used by the notebook. The dataset documentation is
-available in [`dataverse_files/README.txt`](dataverse_files/README.txt).
+Alternatively, run `main.ipynb` from top to bottom using this environment.
+The first step cleans and merges data; the second uses cached scores to produce
+tables, figures and the blinded review worksheet under `outputs/whole_speech_eda/`.
+These commands do not download the transformer or repeat inference.
+The copies in `results/` are a published snapshot, not inputs to the analysis.
 
-## What the notebook does
+Expected: 6,712 prepared speeches, 6,633 in the main population, and 6,445
+country-years with next-year targets. Of those, 5,071 have observed spending.
+An unavailable or incompatible score cache produces an error rather than
+silently using the old scores.
 
-`main.ipynb`:
+## Generate scores only if the cache is unavailable
 
-1. Loads the four input paths from `.env`.
-2. Adds speech text to the speaker metadata and cleans missing metadata.
-3. Loads and aggregates UCDP conflict data by country and year.
-4. Loads SIPRI military spending as a percentage of GDP and reshapes it to
-   country-year format.
-5. Standardizes country names and flags historical entities that cannot be
-   matched reliably to modern country data.
-6. Merges the datasets and restricts the modeling table to 1990–2025.
-7. Cleans speech text and removes English stopwords.
-8. Scores each speech with the
-   `MoritzLaurer/ModernBERT-large-zeroshot-v2.0` zero-shot classification model
-   for trust/cooperation and military-threat rhetoric.
-9. Compares those scores and military spending with whether conflict occurs in
-   the following year.
+```bash
+pip install -r requirements-model.txt
+python scripts/score_speeches.py --device auto --batch-size 8
+```
 
-The classification step can take approximately one hour and requires a working
-PyTorch/Transformers installation. On macOS, the notebook is configured to use
-the Apple Metal Performance Shaders (`mps`) device.
+This took about ten hours on the original Mac. It resumes compatible completed
+batches after interruption. Do not run two scoring processes on the same cache.
+Changing hardware or settings requires a separate cache via `--cache`.
 
-## Output
+The model and revision are pinned in `rhetoric_scoring.py`. It scores coherent
+text in non-overlapping chunks of up to 480 tokens, evaluates cooperation and
+military-threat labels independently, and averages by chunk length.
+These are theme-compatibility scores, not sentiment or aggressive intent.
 
-The notebook saves the processed and scored dataset as `merged_data.csv` in the
-project root. Because this file contains generated results, it can be reused to
-inspect the final data without rebuilding the earlier processing steps.
+## Where the code lives
 
-## Running the project
+- `analysis_pipeline.py`: source loading, country reconciliation, text cleaning and joins.
+- `text_dictionaries.py`: transparent diagnostic keyword features, not the final scores.
+- `rhetoric_scoring.py`: transformer chunking, scoring and cache reading.
+- `analysis_eda.py`: transition summaries, country-bootstrap intervals and figures.
+- `scripts/`: three entry points for preparation, scoring and review/EDA.
 
-1. Create and activate a virtual environment.
-2. Install the required Python packages:
+The separate historical audit framework, automated test suite and unfinished
+prediction code are not part of this streamlined submission. Only lightweight
+input, join and cache-consistency checks remain in the runnable pipeline.
 
-   ```bash
-   pip install python-dotenv pandas openpyxl nltk scipy matplotlib seaborn transformers torch
-   ```
+## Interpretation and next work
 
-3. Add your local paths to `.env` as described above.
-4. Open `main.ipynb` and run the cells from top to bottom.
+Speech years 1990–2024 have exact next-year conflict outcomes. 2025 remains in
+the source table but not these comparisons; Session 81 is excluded. Missing
+military spending is not zero. UCDP describes government-side conflict involvement,
+not necessarily where fighting occurs. Annual data make this retrospective
+analysis, not a real-time September forecast.
+
+Ask one or two teammates to independently rate
+`outputs/whole_speech_eda/passage_review_blinded.csv` before reading the model
+key or [PASSAGE_REVIEW.md](PASSAGE_REVIEW.md). Then implement the chronological
+predictive comparison in the research design. Do not claim predictive value
+from descriptive group differences alone.
+
+Code preparation and the initial passage review used AI assistance. Team members
+should understand and review the methods and follow the course's disclosure rules.
