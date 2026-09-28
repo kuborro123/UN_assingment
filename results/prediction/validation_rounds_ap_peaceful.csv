@@ -1,0 +1,8 @@
+sample,model,2005-2008,2009-2012,2013-2016,2017-2020,mean
+all countries,persistence,0.026,0.024,0.036,0.027,0.029
+all countries,history,0.222,0.075,0.341,0.364,0.251
+all countries,history + rhetoric,0.235,0.085,0.322,0.34,0.246
+countries with spending data,persistence,0.028,0.03,0.042,0.035,0.034
+countries with spending data,history,0.252,0.105,0.376,0.375,0.277
+countries with spending data,history + spending,0.246,0.105,0.384,0.38,0.279
+countries with spending data,history + spending + rhetoric,0.239,0.121,0.379,0.345,0.271

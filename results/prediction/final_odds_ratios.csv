@@ -1,0 +1,16 @@
+,all countries: history,all countries: history + rhetoric,countries with spending data: history,countries with spending data: history + spending,countries with spending data: history + spending + rhetoric
+conflict_active_t,2.296,2.279,2.346,2.331,2.303
+any_war_t,1.276,1.256,1.257,1.246,1.233
+n_conflicts_t,1.857,1.854,1.967,1.97,1.994
+conflict_years_past5,2.529,2.521,2.702,2.672,2.68
+log_milex,,,,1.084,1.051
+trust_score,,0.867,,,0.841
+threat_score,,1.118,,,1.07
+year,1.206,1.194,1.216,1.225,1.198
+log_words,1.124,1.09,1.083,1.078,1.048
+speaker_post_group_foreign_minister,0.843,0.82,1.116,1.113,1.099
+speaker_post_group_head_of_government,0.418,0.408,0.614,0.617,0.597
+speaker_post_group_head_of_state,0.806,0.806,1.114,1.116,1.109
+speaker_post_group_other,0.834,0.844,1.137,1.161,1.201
+speaker_post_group_representative,0.545,0.543,0.681,0.679,0.672
+speaker_post_group_unknown,1.039,1.08,1.66,1.632,1.699

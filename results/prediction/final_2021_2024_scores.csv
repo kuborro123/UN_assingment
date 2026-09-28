@@ -1,0 +1,8 @@
+sample,test_years,model,n_rows,n_conflicts,n_onsets,AP_all,ROC_AUC_all,AP_peaceful,onset_share_peaceful
+all countries,2021-2024,persistence,759,137,12,0.8669,0.949,0.0192,0.0192
+all countries,2021-2024,history,759,137,12,0.9488,0.9676,0.2125,0.0192
+all countries,2021-2024,history + rhetoric,759,137,12,0.9501,0.9691,0.2278,0.0192
+countries with spending data,2021-2024,persistence,602,126,12,0.8585,0.9429,0.0251,0.0251
+countries with spending data,2021-2024,history,602,126,12,0.9444,0.9632,0.183,0.0251
+countries with spending data,2021-2024,history + spending,602,126,12,0.9448,0.9641,0.2253,0.0251
+countries with spending data,2021-2024,history + spending + rhetoric,602,126,12,0.9454,0.9652,0.234,0.0251
